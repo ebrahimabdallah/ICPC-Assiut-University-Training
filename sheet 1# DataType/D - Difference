@@ -1,0 +1,14 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+ 
+int main()
+{
+	long long  a, b,c,d;
+	cin >> a >> b >>c >>d;
+ 
+	long long  y = (a * b) - (c * d);
+	cout <<"Difference = " << y << endl;
+	
+ 
+}
