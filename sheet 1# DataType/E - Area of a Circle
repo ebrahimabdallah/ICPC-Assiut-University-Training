@@ -1,0 +1,23 @@
+```
+
+#include<iostream>
+#include<algorithm>
+#include<iomanip>
+using namespace std;
+ 
+int main()
+{
+	double   R;
+	cin >> R;
+ 
+	double Area =( 3.141592653) * (R * R);
+ 
+	cout << setprecision(11) << Area;
+ 
+ 
+ 
+	
+ 
+}
+	
+```
