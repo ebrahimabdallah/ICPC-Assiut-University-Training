@@ -1,0 +1,20 @@
+#include<iostream>
+#include<algorithm>
+#include<iomanip>
+using namespace std;
+ 
+int main()
+{
+	long long  a, b;
+	cin >> a >> b;
+	long long  y = a % 10;
+	long long  r = b % 10;
+	long long  z = y + r;
+	cout << z << endl;
+ 
+ 
+ 
+	
+ 
+}
+ 
