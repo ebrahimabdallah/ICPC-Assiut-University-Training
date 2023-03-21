@@ -12,4 +12,3 @@ int main()
 		cout << "Wrong" << endl;
 	return 0;
 }
- 
