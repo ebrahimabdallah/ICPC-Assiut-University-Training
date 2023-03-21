@@ -1,0 +1,33 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+int main()
+{
+	char sign,equal ;
+	int a, b,c;
+	int resualt;
+	cin >> a >> sign >> b >> equal>> c;
+	
+	if (sign == '+')
+	{
+		resualt = a + b;
+	}
+	else if  (sign == '*')
+	{
+		resualt = a * b;
+	}
+	else if  (sign == '-')
+	{
+		resualt = a - b;
+	}
+	if (resualt == c)
+	{
+		cout << "Yes" << endl;
+	}
+	else
+	{
+		cout << resualt << endl;
+	}
+ 
+}
