@@ -1,0 +1,14 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+ 
+	double num;
+	double discount;
+	cin >> discount >> num;
+	double pre = 100 - discount;  //100-15 =85
+	double priceresult = num / pre; //  20/85=.23
+	double salary_before = (discount * priceresult) + num;  //(15*.23)+20 = 23.5
+	cout << salary_before << endl;
+}
