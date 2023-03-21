@@ -1,0 +1,22 @@
+#include<iostream>
+#include<algorithm>
+#include <string>
+using namespace std;
+ 
+int main()
+{
+	char ch;
+	cin >> ch;
+ 
+	if (ch >= 65 && ch <= 92)
+ 
+	{
+		ch = ch + 32;
+	cout << ch << endl;
+}
+	else
+	{
+		ch = ch - 32;
+		cout << ch << endl;
+	}
+}
