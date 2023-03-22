@@ -1,3 +1,4 @@
+```
 #include<iostream>
 #include <numeric>
 #include<string>
@@ -26,3 +27,4 @@ int main()
     cout << -1 << endl;
     return 0;
 }
+```
