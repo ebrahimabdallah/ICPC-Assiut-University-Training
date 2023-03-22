@@ -6,10 +6,10 @@ using namespace std;
 
 int main()
 {
-    int arr[100001], i, num;
+    int i, num;
     long long count;
     cin >> count;
-
+     int arr[count]
     for (i = 0; i < count; i++) {
         cin >> arr[i];
     }
