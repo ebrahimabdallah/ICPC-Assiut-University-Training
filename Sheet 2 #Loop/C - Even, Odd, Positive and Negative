@@ -1,0 +1,37 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+	int count;
+	cin >> count;
+	int Positive =0, Negative =0, Odd =0, Even =0;
+	for (int i = 0; i < count; i++)
+	{
+		int number;
+		cin >> number;
+ 
+		 if (number % 2 == 0)
+		{
+		Even++;
+		}
+		else
+		{
+		Odd++;
+		}
+		if (number < 0)
+		{
+			Negative++;
+		}
+		else if (number > 0)
+		{
+			Positive++;
+		}
+		
+	}
+		cout << "Even: "<< Even << endl;
+		cout <<"Odd: "<< Odd << endl;
+		cout  <<"Positive: "<< Positive << endl;
+		cout  <<"Negative: "<< Negative << endl;
+	}
+ 
