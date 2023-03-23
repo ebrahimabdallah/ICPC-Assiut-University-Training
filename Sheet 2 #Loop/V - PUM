@@ -1,0 +1,23 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+ 
+int main()
+{
+	int n, m;
+ 
+	cin >> n;
+	int c = n * 4;
+	for (int i = 1; i <= c; i++)
+	{
+		if (i % 4 == 0)
+		{
+			cout <<"PUM" << endl;
+		}
+		else
+		{
+			cout << i<<" ";
+		}
+	}
+ 
+}
