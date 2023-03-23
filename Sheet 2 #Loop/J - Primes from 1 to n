@@ -1,0 +1,27 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+	
+    int N, i, j, Prime, n;
+ 
+    cin >> N;
+ 
+    for (i = 2; i <= N; i++) {
+        Prime = 0;
+        for (j = 2; j <= i / 2; j++) {
+          
+            if (i % j == 0) {
+                Prime = 1;
+                break;
+            }
+        }
+ 
+        if (Prime == 0 && N != 1)
+            cout << i << " ";
+    }
+ 
+    return 0;
+}
+ 
