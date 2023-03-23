@@ -1,0 +1,30 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+ 
+int main()
+{
+	int n=0;
+	int m = 1;
+	int  size;
+	cin >> size;
+	if (size == 1)
+	{
+		cout << n << endl;
+	}
+	else if (size == 2)
+	{
+		cout << n << " " << m << " " << endl;
+	}
+	else
+	{
+		cout << n << " " << m << " ";
+		for (int i = 2; i < size; i++)
+		{
+			int resualt = m + n;
+			cout << resualt << " ";
+			n = m;
+			m = resualt;
+		}
+	}
+}
