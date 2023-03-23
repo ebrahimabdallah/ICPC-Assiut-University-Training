@@ -1,0 +1,26 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+     int  N;
+    cin >> N;
+	long long  max=0;
+	for (int i = 1; i <= N; i++)
+	{
+		long long  num;
+		cin >> num;
+ 
+		if (i == 1)
+		{
+			max = num;
+		}
+		if (max<num)
+		{
+			max = num;
+		}
+	}
+	cout << max<<endl;
+}
+ 
+ 
