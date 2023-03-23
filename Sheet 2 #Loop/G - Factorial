@@ -1,0 +1,22 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+	
+	long long  fact = 1;
+	int num;
+	cin >> num;
+	for (int i = 1; i <= num; i++)
+	{
+		int N;
+		cin >> N;
+ 
+		for (int i = 1; i <= N; i++)
+		{
+			fact *= i;
+		}
+		cout << fact << endl;
+		fact = 1;
+	}
+}
