@@ -1,0 +1,35 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+ 
+	int n, m, min, max,count;
+	cin >>count;
+	
+	while (count--)
+	{
+		int sum = 0;
+		cin >> m >> n;
+		if (m <= n)
+		{
+			min = m;
+			max = n;
+		}
+		else
+		{
+			min = n;
+			max = m;
+		}
+		for (int i = min+1; i <= max-1; i++)
+		{
+			if (i % 2 != 0)
+			{
+				sum += i;
+			}
+		}
+		cout << sum << endl;
+			
+		
+	}
+}
