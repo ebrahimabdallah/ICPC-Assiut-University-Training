@@ -1,0 +1,17 @@
+#include<iostream>
+#include <bits/stdc++.h>
+ 
+using namespace std;
+int main()
+{
+	int y1, x1, y2, x2;
+	cin >> x1 >> y1 >> x2 >> y2;
+ 
+	 double distance=sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));	
+	 cout << fixed<<setprecision(9)<<distance << endl;
+	 
+}
+
+// Explaine
+//fixed is used to fix the number of decimal places required after the decimal point
+//setprecision() is used to specify the required number of decimal places
