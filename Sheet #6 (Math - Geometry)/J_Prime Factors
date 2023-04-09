@@ -1,0 +1,40 @@
+#include<iostream>
+ 
+using namespace std;
+int main()
+{
+    long long n;
+    int i = 2;
+    cin >> n;
+    while (n > 1)
+ 
+    {
+        int count = 0;
+        while (n % i == 0)
+        {
+            count++;
+            n /= i;
+        }
+        if (count > 0)
+        {
+            cout << "(" << i << "^" << count << ")" ;
+        
+        if (n > 1)
+        {
+            cout << "*" ;
+        }
+ 
+    }
+    i++;
+    if (i * i > n)
+    {
+        if (n > 1)
+        {
+            cout << "(" << n << "^" << 1 << ")" ;
+ 
+        }
+        break;
+    }
+}
+    return 0;
+}
