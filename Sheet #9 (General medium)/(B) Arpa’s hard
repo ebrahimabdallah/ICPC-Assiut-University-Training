@@ -1,0 +1,48 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+   
+    long long  n;
+    cin >> n;
+
+    long long digit = 1378 % 10; // to get a last number in digit 
+    //digit = last number 
+    int res = 1;
+    while (n > 0)
+    {
+        if (n % 2 == 1)
+        {
+            res = (res * digit) % 10;
+        }
+        digit = (digit * digit) % 10;   // avoid exceed the limit
+
+        n /= 2;    //n^4 = (n^2)^2
+    }
+    cout << res;
+
+    /*--------------------------------- other solve-------------------------------------------*/
+        /*
+     //[2]---->1378^2=1898884-->(4)
+    //[3]---->1378^3=2616662152-->(2)
+ //[1]----->1378-->(8)
+
+    long long num;
+    cin >> num;
+    
+    if (num % 4 == 0) {
+        cout << 6 << endl;
+    }
+    else if (num % 4 == 1) {
+        cout << 8 << endl;
+    }
+    else if (num % 4 == 2) {
+        cout << 4 << endl;
+    }
+    else if (num % 4 == 3) {
+        cout << 2 << endl;
+    }
+    */
+}
+
